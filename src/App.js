@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Corpo, BoxCom, BoxBottom} from './Global';
+
+//components
+  import Red from './components/Red';
+  import Green from './components/Green';
+  import Blue from './components/Blue';
+  import Label from './components/Label';
+
+// import { Container } from './styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    <Corpo>
+    <BoxCom>
+      <Red />
+      <Green />
+      <Blue />
+    </BoxCom>
+
+    <BoxBottom>
+    <Label />
+    </BoxBottom>
+    </Corpo>
+     
+  
+  )
 }
 
 export default App;
