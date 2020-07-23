@@ -1,6 +1,4 @@
 import React from 'react';
-// import { useValues } from '../../context/Values';
-
 
 import { useValues} from '../../context/Values';
 import {Vizu, Text} from './styles';
@@ -8,32 +6,22 @@ import {Vizu, Text} from './styles';
 export default function Label() {
   
   const {
-    ValueRed, 
-    ValueGreen,
-    ValueBlue,
+    ValRed, 
+    ValGreen,
+    ValBlue,
     Result,
     setResult
   } = useValues();
   
- 
-   const resultado = `#${ValueRed}${ValueGreen}${ValueBlue}`
-
+   const resultado = `rgb(${ValRed},${ValGreen},${ValBlue})`
    setResult(resultado)
-
-
-  
-  return (
-
-       
-
+ 
+   return ( 
    <Vizu style={{background: Result}}>
       <Text>{Result}</Text>
-
    </Vizu>
-
-   
+ 
   );
-
 }
 
 

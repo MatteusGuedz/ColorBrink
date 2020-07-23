@@ -9,7 +9,7 @@ export const Vizu = styled.div`
     justify-content:center;
     font-size: 30px;   
 
-    width:400px;
+    width:600px;
     height: 100px;
     border: solid 1px #fff;
     border-radius: 30px;
